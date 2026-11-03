@@ -10,6 +10,15 @@ const ProductDetailPage = () => {
     const { id } = useParams();
     const { addItem } = useCart();
 
+    // Volver arriba cada vez que se abre otro producto
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant",
+        });
+    }, [id]);
+
     const [producto, setProducto] = useState(null);
     const [productos, setProductos] = useState([]);
     const [cargando, setCargando] = useState(true);
@@ -402,8 +411,8 @@ const ProductDetailPage = () => {
                             <p
                                 role="status"
                                 className={`mt-3 text-xs ${mensajeValidacion.startsWith("¡")
-                                        ? "text-green-700"
-                                        : "text-red-700"
+                                    ? "text-green-700"
+                                    : "text-red-700"
                                     }`}
                             >
                                 {mensajeValidacion}

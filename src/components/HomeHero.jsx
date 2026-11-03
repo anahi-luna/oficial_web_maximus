@@ -45,7 +45,7 @@ export default function HomeHero() {
             </h1>
 
             <p className="mt-3 text-sm leading-5 text-white/95 sm:text-base">
-              De la L a la 6XL, sin achicar el diseño.
+              Del talle 6 al 14, sin achicar el diseño.
               Prendas pensadas desde el patronaje para el cuerpo grande.
             </p>
 

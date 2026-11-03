@@ -133,7 +133,7 @@ export default function Navbar() {
       wholesaleActive
         ? "PROMOCIÓN MAYORISTA APLICADA"
         : "Precio minorista aplicado",
-      `Subtotal: ${formatearPrecio(subtotal)}`,
+      `Total a pagar: ${formatearPrecio(subtotal)}`,
       wholesaleActive
         ? `Ahorro mayorista: ${formatearPrecio(savings)}`
         : null,
